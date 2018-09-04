@@ -8,6 +8,8 @@ export default Controller.extend({
     isValid: match('emailAddress', /^.+@.+\..+$/),
     isDisabled: not('isValid'),
 
+    headerMessage: 'Coming Soon!',
+
     actions: {
       saveInvitation() {
         alert(`Saving of the following email address is in progress: ${this.get('emailAddress')}`);
