@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
-        // try git ignore
+        // try git ignore 2
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
