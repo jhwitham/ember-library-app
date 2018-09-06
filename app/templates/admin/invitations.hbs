@@ -1,1 +1,18 @@
-{{outlet}}
+<h1>Invitations</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>E-Mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |invitation|}}
+    <tr>
+      <th>{{invitation.id}}</th>
+      <td>{{invitation.email}}</td>
+    </tr>
+    {{each}}
+  </tbody>
+</table>
