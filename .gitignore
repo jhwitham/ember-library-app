@@ -17,6 +17,8 @@
 /testem.log
 /yarn-error.log
 /config/
+/.firebaserc
+/.firebase.json
 
 # ember-try
 /.node_modules.ember-try/
