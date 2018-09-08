@@ -19,6 +19,7 @@
 /config/
 /.firebaserc
 /.firebase.json
+/.firebase/
 
 # ember-try
 /.node_modules.ember-try/
