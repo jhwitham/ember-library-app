@@ -7,7 +7,7 @@ export default DS.Model.extend({
   address: DS.attr('string'),
   phone: DS.attr('string'),
 
-  books: DS.hasMany('book'),
+  books: DS.hasMany('book', { inverse: 'library', async: true }),
 
   isValid: notEmpty('name'),
 
