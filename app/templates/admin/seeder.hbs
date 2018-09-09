@@ -5,3 +5,21 @@
   <div class="col-md-4">{{number-box title="Authors" number=authors.length}}</div>
   <div class="col-md-4">{{number-box title="Books" number=books.length}}</div>
 </div>
+
+{{seeder-block
+ sectionTitle='Libraries'
+ generateAction='generateLibraries'
+ deleteAction='deleteLibraries'
+ generateReady=libDone
+ deleteReady=libDelDone
+ generateInProgress=generateLibrariesInProgress
+ deleteInProgress=deleteLibrariesInProgress}}
+
+{{seeder-block
+ sectionTitle='Authors with Books'
+ generateAction='generateBooksAndAuthors'
+ deleteAction='deleteBooksAndAuthors'
+ generateReady=authDone
+ deleteReady=authDelDone
+ generateInProgress=generateBooksInProgress
+ deleteInProgress=deleteBooksInProgress}}
